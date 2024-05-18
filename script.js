@@ -30,10 +30,6 @@ function animalsDescription() {
 }
 animalsDescription();
 
-//
-//
-//
-
 function faqAccordions() {
   const accordionItems = document.querySelectorAll(".js-accordion dt");
 
@@ -50,3 +46,20 @@ function faqAccordions() {
 }
 
 faqAccordions();
+
+function scrollToSection() {
+  const internalAnchorLink = document.querySelectorAll(".js-menu a[href^='#']");
+
+  function scrollToSectionById(e) {
+    e.preventDefault();
+    const sectionTarget = document.querySelector(e.target.hash);
+    sectionTarget.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
+  internalAnchorLink.forEach((link) => {
+    link.addEventListener("click", scrollToSectionById);
+  });
+}
+scrollToSection();

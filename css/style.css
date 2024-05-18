@@ -167,6 +167,8 @@ body {
   font-weight: bold;
   margin: 2rem 0 0.5rem;
   color: #e54;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .faq-list dt::before {
@@ -182,6 +184,7 @@ body {
   font-family: var(--ff-paragraph);
   margin-bottom: 0.5rem;
   margin-left: 1.875rem;
+  display: none;
 }
 
 .map {

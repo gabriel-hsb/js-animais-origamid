@@ -1,19 +1,52 @@
-const tabMenu = document.querySelectorAll(".js-tabmenu li");
-const tabMenuContent = document.querySelectorAll(".js-tabmenu-content section");
+function animalsDescription() {
+  const animalsPhotos = document.querySelectorAll(".js-tabmenu li");
+  const animalsDescriptions = document.querySelectorAll(
+    ".js-tabmenu-content section"
+  );
 
-if (tabMenu.length && tabMenuContent.length) {
-  function activeSectionTab(index) {
-    tabMenuContent.forEach((content) => {
-      content.classList.remove("animal-section-active");
-    });
-    tabMenuContent[index].classList.add("animal-section-active");
-  }
+  if (animalsPhotos.length && animalsDescriptions.length) {
+    function activeSectionTab(index) {
+      animalsDescriptions.forEach((description) => {
+        description.classList.remove("animal-section-active");
+      });
 
-  tabMenu.forEach((animalPhoto, index) => {
-    animalPhoto.addEventListener("click", handleAnimalPhotoClick);
+      animalsDescriptions[index].classList.add("animal-section-active");
 
-    function handleAnimalPhotoClick() {
-      activeSectionTab(index);
+      animalsPhotos.forEach((animalPhoto) => {
+        animalPhoto.classList.remove("animal-photo-active");
+      });
+      animalsPhotos[index].classList.add("animal-photo-active");
+      // TODO: zoom image (modal-like) when active (description is showing)
     }
-  });
+
+    animalsPhotos.forEach((animalPhoto, index) => {
+      animalPhoto.addEventListener("click", handleAnimalPhotoClick);
+
+      function handleAnimalPhotoClick() {
+        activeSectionTab(index);
+      }
+    });
+  }
 }
+animalsDescription();
+
+//
+//
+//
+
+function faqAccordions() {
+  const accordionItems = document.querySelectorAll(".js-accordion dt");
+
+  if (accordionItems.length) {
+    function handleAccordionItem() {
+      this.classList.toggle("accordion-definition-active");
+      this.nextElementSibling.classList.toggle("accordion-description-active");
+    }
+
+    accordionItems.forEach((accordionItem) => {
+      accordionItem.addEventListener("click", handleAccordionItem);
+    });
+  }
+}
+
+faqAccordions();

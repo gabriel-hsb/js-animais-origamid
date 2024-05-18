@@ -1,0 +1,252 @@
+:root {
+  --ff-monospace: "IBM Plex Mono", monospace;
+  --ff-title: "Playfair Display SC", Georgia;
+  --ff-paragraph: Helvetica, Arial, sans-serif;
+}
+
+/* --- START RESETS --- */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+dd,
+dt,
+dl,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- END RESETS --- */
+
+body {
+  background: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+
+  display: grid;
+  grid-template-columns: 1fr 7.5rem minmax(18.75rem, 50rem) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin: 32px 0;
+  background-color: #fb5;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #222;
+  text-decoration: none;
+  font-family: var(--ff-monospace);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.grid-section {
+  grid-column: 2 /4;
+  width: 95%;
+  padding: 10px;
+  grid-gap: 20px;
+  margin-bottom: 64px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 5.625rem 18.75rem 1fr;
+}
+
+.title {
+  font-family: var(--ff-title);
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 1;
+
+  margin-bottom: 16px;
+  grid-column: 1 / 4;
+}
+
+.animals h2 {
+  font-family: var(--ff-monospace);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  color: #e54;
+}
+
+.animals h2::before {
+  content: "";
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  background: #fb5;
+}
+
+.animals p {
+  font-family: var(--ff-paragraph);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.animals-list {
+  height: 370px;
+  grid-column: 2;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.animals-list::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animals-list::-webkit-scrollbar-thumb {
+  background: #fb5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+}
+
+.animals-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 187, 85, 0.746);
+}
+
+.animals-list::-webkit-scrollbar-track {
+  background: #faf6ed;
+}
+
+.animal-photo {
+  scroll-snap-align: start;
+}
+
+.animals-description {
+  grid-column: 3;
+}
+
+.animals-description section {
+  margin-bottom: 3rem;
+}
+
+.faq-list {
+  grid-column: 2 / 4;
+}
+
+.faq-list dt {
+  font-family: var(--ff-monospace);
+  font-weight: bold;
+  margin: 2rem 0 0.5rem;
+  color: #e54;
+}
+
+.faq-list dt::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  background: #fb5;
+}
+
+.faq-list dd {
+  font-family: var(--ff-paragraph);
+  margin-bottom: 0.5rem;
+  margin-left: 1.875rem;
+}
+
+.map {
+  grid-column: 2;
+}
+
+.data {
+  grid-column: 3;
+}
+
+.data li {
+  margin-bottom: 1rem;
+  font-family: var(--ff-paragraph);
+}
+
+.data li::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  background: #fb5;
+}
+
+.copy {
+  grid-column: 3 / 5;
+  background: #fb5;
+  margin-bottom: 2rem;
+}
+
+.copy p {
+  padding: 1.25rem;
+  font-family: var(--ff-monospace);
+  font-weight: bold;
+}
+
+@media (width <= 43.75rem) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .menu,
+  .grid-section,
+  .copy {
+    grid-column: 1;
+  }
+
+  .grid-section {
+    grid-template-columns: 6.25rem 1fr;
+    gap: 0.625rem;
+  }
+
+  .animals-list {
+    grid-column: 1;
+  }
+
+  .faq-list,
+  .data,
+  .map {
+    grid-column: 1 / 3;
+  }
+
+  .grid-section h1 {
+    font-size: 3rem;
+  }
+
+  .menu {
+    margin: 0 0 16px;
+  }
+
+  .copy {
+    margin-bottom: 0;
+  }
+}

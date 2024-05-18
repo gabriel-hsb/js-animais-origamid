@@ -125,6 +125,7 @@ body {
   overflow-y: scroll;
   scroll-snap-type: y proximity;
   cursor: pointer;
+  overscroll-behavior: contain;
 }
 
 .animals-list::-webkit-scrollbar {

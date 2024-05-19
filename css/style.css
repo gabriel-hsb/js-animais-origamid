@@ -4,6 +4,8 @@
   --ff-monospace: "IBM Plex Mono", monospace;
   --ff-title: "Playfair Display SC", Georgia;
   --ff-paragraph: Helvetica, Arial, sans-serif;
+
+  /* TODO: create variables for colors  */
 }
 
 /* --- START RESETS --- */
@@ -184,7 +186,6 @@ body {
   font-family: var(--ff-paragraph);
   margin-bottom: 0.5rem;
   margin-left: 1.875rem;
-  display: none;
 }
 
 .map {

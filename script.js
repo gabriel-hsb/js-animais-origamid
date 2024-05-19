@@ -63,3 +63,24 @@ function scrollToSection() {
   });
 }
 scrollToSection();
+
+function animateSectionEntrance() {
+  const sections = document.querySelectorAll(".js-scroll");
+  const windowHalfHeight = window.innerHeight * 0.5;
+
+  if (sections.length) {
+    function animateSectionScroll() {
+      sections.forEach((section) => {
+        const sectionToTop = section.getBoundingClientRect().top;
+        const sectionIsVisible = sectionToTop - windowHalfHeight < 0;
+
+        if (sectionIsVisible) {
+          section.classList.add("section-animate-entrance");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", animateSectionScroll);
+  }
+}
+animateSectionEntrance();

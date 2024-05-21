@@ -12,3 +12,6 @@ animalsDescription();
 
 import modal from "./modules/modal/modal.js";
 modal();
+
+import tooltip from "./modules/tooltip/tooltip.js";
+tooltip();

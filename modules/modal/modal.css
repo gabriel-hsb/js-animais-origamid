@@ -21,7 +21,9 @@
   border: 0.625rem solid #fb5;
   box-shadow: 0 0 0 0.625rem #fff;
   position: relative;
-  min-width: 18.75rem;
+  width: 60vw;
+  max-width: 600px;
+  margin-inline: 2rem;
 }
 
 @keyframes modalEntrance {
@@ -110,3 +112,5 @@
 [data-modal="open"] {
   cursor: pointer;
 }
+
+/* TODO: media query */

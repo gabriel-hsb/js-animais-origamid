@@ -2,6 +2,7 @@
 @import url(./modules/animals-description/animals-description.css);
 @import url(./modules/section-entrance/section-entrance.css);
 @import url(./modules/modal/modal.css);
+@import url(./modules/tooltip/tooltip.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;

@@ -3,6 +3,7 @@
 @import url(./modules/section-entrance/section-entrance.css);
 @import url(./modules/modal/modal.css);
 @import url(./modules/tooltip/tooltip.css);
+@import url(./modules/dropdown-menu/dropdown-menu.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -74,6 +75,10 @@ body {
   flex-wrap: wrap;
 }
 
+.menu div li span {
+  margin-right: 0.625rem;
+}
+
 .menu li a {
   display: block;
   padding: 10px;
@@ -86,6 +91,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.menu li a[href^="http"] {
+  text-decoration: underline;
 }
 
 .grid-section {

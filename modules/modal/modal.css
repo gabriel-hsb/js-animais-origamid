@@ -107,6 +107,7 @@
   font-size: 1.1rem;
   font-family: var(--ff-paragraph);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 [data-modal="open"] {

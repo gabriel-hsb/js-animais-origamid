@@ -15,3 +15,6 @@ modal();
 
 import tooltip from "./modules/tooltip/tooltip.js";
 tooltip();
+
+import dropdownMenu from "./modules/dropdown-menu/dropdown-menu.js";
+dropdownMenu();

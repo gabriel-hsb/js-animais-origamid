@@ -6,18 +6,7 @@
 
 .accordion-description-active {
   display: block !important;
-  animation: showDtDescription 0.4s forwards;
-}
-
-@keyframes showDtDescription {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -10px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+  animation: topToBottom 0.4s forwards;
 }
 
 .faq dt::after {

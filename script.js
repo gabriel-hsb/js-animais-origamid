@@ -9,3 +9,6 @@ animateSectionEntrance();
 
 import animalsDescription from "./modules/animals-description/animals-description.js";
 animalsDescription();
+
+import modal from "./modules/modal/modal.js";
+modal();

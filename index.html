@@ -24,213 +24,265 @@
   </head>
 
   <body>
-    <header class="menu">
-      <nav>
-        <ul>
-          <li>
-            <a href="#animals">Animais</a>
+    <div class="container-body-grid">
+      <header class="menu">
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="#animals">Animais</a>
+              </li>
+              <li>
+                <a href="#faq">Faq</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
+              <li>
+                <a data-modal="open">Newsletter</a>
+              </li>
+            </div>
+            <li>
+              <a href="https://github.com/gabriel-hsb" target="_blank"
+                >Dev <span>&#8594;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <noscript
+        >Por favor ative o JavaScript para fazer melhor uso da página</noscript
+      >
+
+      <section
+        id="animals"
+        class="grid-section animals section-animate-entrance"
+      >
+        <h1 class="title">Animais Fantásticos</h1>
+        <ul class="animals-list">
+          <li class="animal-photo-active">
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem1.jpg"
+              alt=""
+            />
           </li>
           <li>
-            <a href="#faq">Faq</a>
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem2.jpg"
+              alt=""
+            />
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem3.jpg"
+              alt=""
+            />
           </li>
           <li>
-            <a href="https://github.com/gabriel-hsb" target="_blank"
-              >Dev <span>&#8594;</span>
-            </a>
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem4.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem5.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="animal-photo"
+              src="./assets/images/imagem6.jpg"
+              alt=""
+            />
           </li>
         </ul>
-      </nav>
-    </header>
+        <div class="animals-description" data-tab="content">
+          <section data-anime="show-right" class="animal-section-active">
+            <h2>Raposa</h2>
+            <p>
+              A raposa é um mamífero ágil e inteligente, conhecido por sua
+              pelagem densa e cauda espessa. Adaptável a diferentes habitats,
+              ela pode ser encontrada em florestas, campos e até áreas urbanas.
+            </p>
+            <p>
+              Com hábitos noturnos, a raposa caça pequenos animais, insetos e
+              frutas, demonstrando grande habilidade e astúcia.
+            </p>
+            <p>
+              Além de ser uma caçadora eficiente, a raposa é também uma figura
+              icônica em diversas culturas, simbolizando astúcia e sagacidade em
+              muitas lendas e histórias. Sua aparência graciosa e comportamento
+              engenhoso cativam a imaginação de pessoas ao redor do mundo.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Esquilo</h2>
+            <p>
+              O esquilo é um pequeno mamífero conhecido por sua agilidade e
+              pelagem fofa. Ele pode ser encontrado em florestas e áreas
+              arborizadas, onde passa a maior parte do tempo nas copas das
+              árvores.
+            </p>
+            <p>
+              Com hábitos diurnos, o esquilo alimenta-se principalmente de
+              sementes, nozes e frutas, demonstrando grande destreza ao se
+              movimentar entre os galhos.
+            </p>
+            <p>
+              Em muitas culturas, simboliza agilidade e esperteza, sendo uma
+              figura adorável em histórias e desenhos animados.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Urso</h2>
+            <p>
+              O urso marrom canadense é um mamífero imponente, conhecido por sua
+              grande força e pelagem densa. Ele habita florestas e regiões
+              montanhosas do Canadá, adaptando-se bem a diferentes climas.
+            </p>
+            <p>
+              Com hábitos diurnos, o urso marrom alimenta-se de peixes, pequenos
+              mamíferos e frutas, demonstrando uma dieta variada.
+            </p>
+            <p>
+              Em muitas culturas, simboliza poder e coragem, sendo uma figura
+              icônica em lendas e histórias. Sua presença majestosa cativa a
+              imaginação de pessoas ao redor do mundo.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Lobo</h2>
+            <p>
+              O lobo é um mamífero selvagem e social, conhecido por sua
+              inteligência e habilidades de caça em grupo. Ele pode ser
+              encontrado em diversos habitats, desde florestas até tundras,
+              adaptando-se bem a diferentes ambientes.
+            </p>
+            <p>
+              Com hábitos noturnos, o lobo caça uma variedade de presas,
+              incluindo cervos, coelhos e roedores, demonstrando grande
+              coordenação e trabalho em equipe. Em muitas culturas, simboliza
+              força e lealdade, sendo uma figura reverenciada em mitos e lendas.
+            </p>
+            <p>
+              Essa imponente criatura inspira respeito e admiração, sendo uma
+              presença marcante nos ecossistemas em que vive.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Macaco</h2>
+            <p>
+              O macaco é um primata ágil e curioso, conhecido por sua
+              inteligência e sociabilidade. Ele habita principalmente florestas
+              tropicais e áreas arborizadas, onde passa grande parte do tempo
+              nas copas das árvores.
+            </p>
+            <p>
+              Com hábitos diurnos, o macaco alimenta-se de uma variedade de
+              alimentos, incluindo frutas, folhas e insetos, demonstrando
+              habilidades de forrageamento e interação social complexa. Em
+              muitas culturas, simboliza travessura e astúcia, sendo uma figura
+              carismática em contos e lendas.
+            </p>
+            <p>
+              Sua presença vibrante e expressiva adiciona vida aos ecossistemas
+              em que vive, inspirando admiração e fascínio em pessoas ao redor
+              do mundo.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Leão</h2>
+            <p>
+              O leão é um majestoso felino conhecido por sua imponência e força.
+              Ele habita as savanas da África, vivendo em grupos sociais
+              chamados de "coalizões".
+            </p>
+            <p>
+              Com hábitos predominantemente diurnos, o leão é um caçador
+              habilidoso, alimentando-se principalmente de presas como antílopes
+              e zebras. Sua presença é símbolo de poder e liderança na natureza,
+              sendo reverenciado em muitas culturas como o "rei da selva".
+            </p>
+            <p>
+              Essa magnífica criatura inspira respeito e fascínio, representando
+              a beleza e a brutalidade do mundo selvagem.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section id="faq" class="grid-section faq" data-tab="content">
+        <h1 class="title">faq</h1>
+        <dl class="faq-list">
+          <dt class="accordion-definition-active">Qual a idade dos animais?</dt>
+          <dd class="accordion-description-active">
+            As raposas são animais mamíferos e onívoros pertencentes à família
+            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
+            comprido e uma cauda longa e peluda.
+          </dd>
+          <dt>Eles são fantásticos?</dt>
+          <dd>
+            As raposas são animais mamíferos e onívoros pertencentes à família
+            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
+            comprido e uma cauda longa e peluda.
+          </dd>
+          <dt>Qual a diferença?</dt>
+          <dd>
+            As raposas são animais mamíferos e onívoros pertencentes à família
+            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
+            comprido e uma cauda longa e peluda.
+          </dd>
+          <dt>Como proteger?</dt>
+          <dd>
+            As raposas são animais mamíferos e onívoros pertencentes à família
+            Canidae. São vulpídeos de porte médio, caracterizados por um focinho
+            comprido e uma cauda longa e peluda.
+          </dd>
+        </dl>
+      </section>
 
-    <noscript
-      >Por favor ative o JavaScript para fazer melhor uso da página</noscript
-    >
+      <section id="contact" class="grid-section" data-tab="content">
+        <h1 class="title">Contato</h1>
+        <div class="map">
+          <img src="./assets/images/mapa.png" alt="" />
+        </div>
+        <ul class="data">
+          <li><a href="mailto:ghbranco6@gmail.com">ghbranco6@gmail.com</a></li>
+          <li><a href="tel:+5515981771985">+55 15 91234.5678</a></li>
+          <li>Rua Ali Perto 123</li>
+          <li>Brasil, SA</li>
+        </ul>
+      </section>
 
-    <section id="animals" class="grid-section animals section-animate-entrance">
-      <h1 class="title">Animais Fantásticos</h1>
-      <ul class="animals-list">
-        <li class="animal-photo-active">
-          <img class="animal-photo" src="./assets/images/imagem1.jpg" alt="" />
-        </li>
-        <li>
-          <img class="animal-photo" src="./assets/images/imagem2.jpg" alt="" />
-        </li>
-        <li>
-          <img class="animal-photo" src="./assets/images/imagem3.jpg" alt="" />
-        </li>
-        <li>
-          <img class="animal-photo" src="./assets/images/imagem4.jpg" alt="" />
-        </li>
-        <li>
-          <img class="animal-photo" src="./assets/images/imagem5.jpg" alt="" />
-        </li>
-        <li>
-          <img class="animal-photo" src="./assets/images/imagem6.jpg" alt="" />
-        </li>
-      </ul>
-      <div class="animals-description" data-tab="content">
-        <section data-anime="show-right" class="animal-section-active">
-          <h2>Raposa</h2>
-          <p>
-            A raposa é um mamífero ágil e inteligente, conhecido por sua pelagem
-            densa e cauda espessa. Adaptável a diferentes habitats, ela pode ser
-            encontrada em florestas, campos e até áreas urbanas.
-          </p>
-          <p>
-            Com hábitos noturnos, a raposa caça pequenos animais, insetos e
-            frutas, demonstrando grande habilidade e astúcia.
-          </p>
-          <p>
-            Além de ser uma caçadora eficiente, a raposa é também uma figura
-            icônica em diversas culturas, simbolizando astúcia e sagacidade em
-            muitas lendas e histórias. Sua aparência graciosa e comportamento
-            engenhoso cativam a imaginação de pessoas ao redor do mundo.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Esquilo</h2>
-          <p>
-            O esquilo é um pequeno mamífero conhecido por sua agilidade e
-            pelagem fofa. Ele pode ser encontrado em florestas e áreas
-            arborizadas, onde passa a maior parte do tempo nas copas das
-            árvores.
-          </p>
-          <p>
-            Com hábitos diurnos, o esquilo alimenta-se principalmente de
-            sementes, nozes e frutas, demonstrando grande destreza ao se
-            movimentar entre os galhos.
-          </p>
-          <p>
-            Em muitas culturas, simboliza agilidade e esperteza, sendo uma
-            figura adorável em histórias e desenhos animados.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Urso</h2>
-          <p>
-            O urso marrom canadense é um mamífero imponente, conhecido por sua
-            grande força e pelagem densa. Ele habita florestas e regiões
-            montanhosas do Canadá, adaptando-se bem a diferentes climas.
-          </p>
-          <p>
-            Com hábitos diurnos, o urso marrom alimenta-se de peixes, pequenos
-            mamíferos e frutas, demonstrando uma dieta variada.
-          </p>
-          <p>
-            Em muitas culturas, simboliza poder e coragem, sendo uma figura
-            icônica em lendas e histórias. Sua presença majestosa cativa a
-            imaginação de pessoas ao redor do mundo.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Lobo</h2>
-          <p>
-            O lobo é um mamífero selvagem e social, conhecido por sua
-            inteligência e habilidades de caça em grupo. Ele pode ser encontrado
-            em diversos habitats, desde florestas até tundras, adaptando-se bem
-            a diferentes ambientes.
-          </p>
-          <p>
-            Com hábitos noturnos, o lobo caça uma variedade de presas, incluindo
-            cervos, coelhos e roedores, demonstrando grande coordenação e
-            trabalho em equipe. Em muitas culturas, simboliza força e lealdade,
-            sendo uma figura reverenciada em mitos e lendas.
-          </p>
-          <p>
-            Essa imponente criatura inspira respeito e admiração, sendo uma
-            presença marcante nos ecossistemas em que vive.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Macaco</h2>
-          <p>
-            O macaco é um primata ágil e curioso, conhecido por sua inteligência
-            e sociabilidade. Ele habita principalmente florestas tropicais e
-            áreas arborizadas, onde passa grande parte do tempo nas copas das
-            árvores.
-          </p>
-          <p>
-            Com hábitos diurnos, o macaco alimenta-se de uma variedade de
-            alimentos, incluindo frutas, folhas e insetos, demonstrando
-            habilidades de forrageamento e interação social complexa. Em muitas
-            culturas, simboliza travessura e astúcia, sendo uma figura
-            carismática em contos e lendas.
-          </p>
-          <p>
-            Sua presença vibrante e expressiva adiciona vida aos ecossistemas em
-            que vive, inspirando admiração e fascínio em pessoas ao redor do
-            mundo.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Leão</h2>
-          <p>
-            O leão é um majestoso felino conhecido por sua imponência e força.
-            Ele habita as savanas da África, vivendo em grupos sociais chamados
-            de "coalizões".
-          </p>
-          <p>
-            Com hábitos predominantemente diurnos, o leão é um caçador
-            habilidoso, alimentando-se principalmente de presas como antílopes e
-            zebras. Sua presença é símbolo de poder e liderança na natureza,
-            sendo reverenciado em muitas culturas como o "rei da selva".
-          </p>
-          <p>
-            Essa magnífica criatura inspira respeito e fascínio, representando a
-            beleza e a brutalidade do mundo selvagem.
-          </p>
-        </section>
+      <footer class="copy">
+        <p>Alguns direitos reservados</p>
+      </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <p>Se mantenha informado com nossa Newsletter</p>
+        <button data-modal="close" class="close-modal">X</button>
+        <form>
+          <div>
+            <label for="name">Seu nome</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="email">Seu e-mail</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <button type="submit">Confirmar</button>
+        </form>
       </div>
     </section>
-    <section id="faq" class="grid-section faq" data-tab="content">
-      <h1 class="title">faq</h1>
-      <dl class="faq-list">
-        <dt class="accordion-definition-active">Qual a idade dos animais?</dt>
-        <dd class="accordion-description-active">
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-        <dt>Eles são fantásticos?</dt>
-        <dd>
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-        <dt>Qual a diferença?</dt>
-        <dd>
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-        <dt>Como proteger?</dt>
-        <dd>
-          As raposas são animais mamíferos e onívoros pertencentes à família
-          Canidae. São vulpídeos de porte médio, caracterizados por um focinho
-          comprido e uma cauda longa e peluda.
-        </dd>
-      </dl>
-    </section>
-
-    <section id="contact" class="grid-section" data-tab="content">
-      <h1 class="title">Contato</h1>
-      <div class="map">
-        <img src="./assets/images/mapa.png" alt="" />
-      </div>
-      <ul class="data">
-        <li><a href="mailto:ghbranco6@gmail.com">ghbranco6@gmail.com</a></li>
-        <li><a href="tel:+5515981771985">+55 15 91234.5678</a></li>
-        <li>Rua Ali Perto 123</li>
-        <li>Brasil, SA</li>
-      </ul>
-    </section>
-
-    <footer class="copy">
-      <p>Alguns direitos reservados</p>
-    </footer>
 
     <script type="module" src="./script.js"></script>
   </body>

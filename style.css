@@ -1,6 +1,7 @@
 @import url(./modules/accordion-list/accordion-list.css);
 @import url(./modules/animals-description/animals-description.css);
 @import url(./modules/section-entrance/section-entrance.css);
+@import url(./modules/modal/modal.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -45,7 +46,9 @@ body {
   background: #faf6ed;
   color: #222;
   -webkit-font-smoothing: antialiased;
+}
 
+.container-body-grid {
   display: grid;
   grid-template-columns: 1fr 7.5rem minmax(18.75rem, 50rem) 1fr;
 }
@@ -60,6 +63,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu li a {
@@ -225,7 +236,7 @@ body {
 }
 
 @media (width <= 43.75rem) {
-  body {
+  .container-body-grid {
     grid-template-columns: 1fr;
   }
   .menu,

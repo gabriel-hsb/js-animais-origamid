@@ -10,7 +10,11 @@
   --ff-title: "Playfair Display SC", Georgia;
   --ff-paragraph: Helvetica, Arial, sans-serif;
 
-  /* TODO: create variables for colors  */
+  --main-color: #fb5;
+  --secondary-color: #e54;
+  --text-dark-color: #222;
+
+  --bg-color: #faf6ed;
 }
 
 /* --- START RESETS --- */
@@ -45,8 +49,8 @@ ul {
 /* --- END RESETS --- */
 
 body {
-  background: #faf6ed;
-  color: #222;
+  background: var(--bg-color);
+  color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -58,7 +62,7 @@ body {
 .menu {
   grid-column: 3 / 5;
   margin: 32px 0;
-  background-color: #fb5;
+  background-color: var(--main-color);
 }
 
 .menu ul {
@@ -83,7 +87,7 @@ body {
   display: block;
   padding: 10px;
   margin-right: 10px;
-  color: #222;
+  color: var(--text-dark-color);
   text-decoration: none;
   font-family: var(--ff-monospace);
   font-style: normal;
@@ -91,6 +95,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  width: fit-content;
 }
 
 .menu li a[href^="http"] {
@@ -126,7 +131,7 @@ body {
   letter-spacing: 0.1em;
   margin-top: -6px;
   margin-bottom: 16px;
-  color: #e54;
+  color: var(--secondary-color);
 }
 
 .animals h2::before {
@@ -135,7 +140,7 @@ body {
   width: 2.5rem;
   height: 0.625rem;
   margin-right: 0.625rem;
-  background: #fb5;
+  background: var(--main-color);
 }
 
 .animals p {
@@ -158,9 +163,9 @@ body {
 }
 
 .animals-list::-webkit-scrollbar-thumb {
-  background: #fb5;
-  border-left: 4px solid #faf6ed;
-  border-right: 4px solid #faf6ed;
+  background: var(--main-color);
+  border-left: 4px solid var(--bg-color);
+  border-right: 4px solid var(--bg-color);
 }
 
 .animals-list::-webkit-scrollbar-thumb:hover {
@@ -168,7 +173,7 @@ body {
 }
 
 .animals-list::-webkit-scrollbar-track {
-  background: #faf6ed;
+  background: var(--bg-color);
 }
 
 .animal-photo {
@@ -191,7 +196,7 @@ body {
   font-family: var(--ff-monospace);
   font-weight: bold;
   margin: 2rem 0 0.5rem;
-  color: #e54;
+  color: var(--secondary-color);
   cursor: pointer;
   width: fit-content;
 }
@@ -202,7 +207,7 @@ body {
   width: 1.25rem;
   height: 0.625rem;
   margin-right: 0.625rem;
-  background: #fb5;
+  background: var(--main-color);
 }
 
 .faq-list dd {
@@ -230,12 +235,12 @@ body {
   width: 1.25rem;
   height: 0.625rem;
   margin-right: 0.625rem;
-  background: #fb5;
+  background: var(--main-color);
 }
 
 .copy {
   grid-column: 3 / 5;
-  background: #fb5;
+  background: var(--main-color);
   margin-bottom: 2rem;
 }
 

@@ -2,7 +2,7 @@
   z-index: 500;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 0 0.125rem #fb5, 0 0 0 0.375rem;
+  box-shadow: 0 0 0 0.125rem var(--main-color), 0 0 0 0.375rem;
   padding: 0.5rem;
   color: #fff;
   font-family: var(--ff-monospace);

@@ -18,7 +18,7 @@
 .modal {
   background-color: #fff;
   padding: 2.5rem;
-  border: 0.625rem solid #fb5;
+  border: 0.625rem solid var(--main-color);
   box-shadow: 0 0 0 0.625rem #fff;
   position: relative;
   width: 60vw;
@@ -60,11 +60,11 @@
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 50%;
-  background-color: #e54;
+  background-color: var(--secondary-color);
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.3);
-  color: white;
+  color: #fff;
   font-family: var(--ff-monospace);
 }
 
@@ -82,7 +82,7 @@
 
 .modal button[type="submit"] {
   display: block;
-  background: #e54;
+  background: var(--secondary-color);
   border: none;
   border-radius: 0.25rem;
   padding: 0.7rem 0.5rem;
@@ -96,11 +96,11 @@
 .modal input {
   font-family: var(--ff-paragraph);
   font-size: 1rem;
-  border: 1px solid #222;
+  border: 1px solid var(--text-dark-color);
 }
 
 .modal input:focus-visible {
-  border: 1px solid #222;
+  border: 1px solid var(--text-dark-color);
 }
 
 .modal p {

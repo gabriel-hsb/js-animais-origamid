@@ -1,0 +1,45 @@
+/* animals description / photos */
+
+.enabled-js [data-tab="content"] section {
+  display: none;
+}
+
+.animal-section-active {
+  display: block !important;
+}
+
+.animal-section-active {
+  display: block !important;
+  animation: show-right 0.5s forwards;
+}
+
+.animal-section-active.show-down {
+  display: block !important;
+  animation: show-down 0.5s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animal-photo-active {
+  cursor: zoom-in;
+}

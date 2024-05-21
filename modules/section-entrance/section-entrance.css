@@ -1,0 +1,9 @@
+/* sections animation */
+
+.enabled-js [data-tab="content"] {
+  opacity: 0;
+}
+
+.section-animate-entrance {
+  animation: show-right 0.5s forwards;
+}

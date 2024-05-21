@@ -1,0 +1,36 @@
+/* accordion */
+
+.enabled-js .faq-list dd {
+  display: none;
+}
+
+.accordion-description-active {
+  display: block !important;
+  animation: showDtDescription 0.4s forwards;
+}
+
+@keyframes showDtDescription {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.faq dt::after {
+  content: "";
+  background: url(../../assets/icons/arrow-red-svg.svg) no-repeat center center;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.accordion-definition-active::after {
+  transform: rotate(-90deg) !important;
+}

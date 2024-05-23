@@ -1,9 +1,12 @@
 /* sections animation */
 
-.enabled-js [data-tab="content"] {
+.enabled-js [data-anime="scroll"] {
   opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(-30px, 0, 0);
 }
 
-.section-animate-entrance {
-  animation: show-right 0.5s forwards;
+.enabled-js [data-anime="scroll"].section-animate-entrance {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

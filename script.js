@@ -21,3 +21,6 @@ dropdownMenu();
 
 import burguerMenu from "./modules/burguer-menu/burguer-menu.js";
 burguerMenu();
+
+import animalNumbers from "./modules/animal-numbers/animal-numbers.js";
+animalNumbers();

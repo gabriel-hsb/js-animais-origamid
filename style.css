@@ -5,6 +5,7 @@
 @import url(./modules/tooltip/tooltip.css);
 @import url(./modules/dropdown-menu/dropdown-menu.css);
 @import url(./modules/burguer-menu/burguer-menu.css);
+@import url(./modules/animal-numbers/animal-numbers.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -45,6 +46,11 @@ img {
 
 ul {
   list-style: none;
+}
+
+* {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* --- END RESETS --- */

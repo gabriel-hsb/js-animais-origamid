@@ -4,7 +4,7 @@ export default function burguerMenu() {
   const buttonMenu = document.querySelector('[data-menu="button"]');
   const menuList = document.querySelector('[data-menu="list"]');
 
-  const userClickEvents = ["click", "touchstart"];
+  const userClickEvents = ["click"];
 
   if (buttonMenu) {
     userClickEvents.forEach((userEvent) => {

@@ -1,0 +1,40 @@
+.numbers-grid {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.numbers-grid h3 {
+  font-size: 2rem;
+  font-family: var(--ff-title);
+  margin-bottom: 0.5rem;
+}
+
+.numbers-grid span {
+  font-family: var(--ff-monospace);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+@media (width <= 700px) {
+  .numbers-grid {
+    grid-column: 1;
+    column-gap: 200px;
+  }
+
+  .numbers-grid h3 {
+    font-size: 1.8rem;
+  }
+
+  .numbers-grid span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (width <= 500px) {
+  .numbers-grid {
+    column-gap: 80px;
+  }
+}

@@ -1,0 +1,7 @@
+.data li.open-now::before {
+  background: var(--success-color);
+}
+
+.data li.closed-now::before {
+  background: var(--secondary-color);
+}

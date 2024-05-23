@@ -24,3 +24,6 @@ burguerMenu();
 
 import animalNumbers from "./modules/animal-numbers/animal-numbers.js";
 animalNumbers();
+
+import dateHourWorking from "./modules/date-hour-working/date-hour-working.js";
+dateHourWorking();

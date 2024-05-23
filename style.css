@@ -6,6 +6,7 @@
 @import url(./modules/dropdown-menu/dropdown-menu.css);
 @import url(./modules/burguer-menu/burguer-menu.css);
 @import url(./modules/animal-numbers/animal-numbers.css);
+@import url(./modules/date-hour-working/date-hour-working.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -15,8 +16,10 @@
   --main-color: #fb5;
   --secondary-color: #e54;
   --text-dark-color: #222;
-
   --bg-color: #faf6ed;
+
+  --success-color: #3f4;
+
 }
 
 /* --- START RESETS --- */

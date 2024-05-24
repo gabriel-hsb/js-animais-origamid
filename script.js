@@ -27,3 +27,6 @@ animalNumbers();
 
 import dateHourWorking from "./modules/date-hour-working/date-hour-working.js";
 dateHourWorking();
+
+import scrollToTop from "./modules/scroll-to-top/scroll-to-top.js";
+scrollToTop();

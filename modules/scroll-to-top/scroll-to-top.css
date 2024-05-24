@@ -1,0 +1,9 @@
+footer span img {
+  position: relative;
+  top: 0;
+  transition: top ease 0.4s;
+}
+
+footer span:hover img {
+  top: -7px;
+}

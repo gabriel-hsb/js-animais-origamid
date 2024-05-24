@@ -7,6 +7,7 @@
 @import url(./modules/burguer-menu/burguer-menu.css);
 @import url(./modules/animal-numbers/animal-numbers.css);
 @import url(./modules/date-hour-working/date-hour-working.css);
+@import url(./modules/scroll-to-top/scroll-to-top.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -19,7 +20,6 @@
   --bg-color: #faf6ed;
 
   --success-color: #3f4;
-
 }
 
 /* --- START RESETS --- */
@@ -54,6 +54,7 @@ ul {
 * {
   text-decoration: none;
   color: inherit;
+  scroll-behavior: smooth;
 }
 
 /* --- END RESETS --- */
@@ -252,12 +253,21 @@ body {
   grid-column: 3 / 5;
   background: var(--main-color);
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .copy p {
   padding: 1.25rem;
   font-family: var(--ff-monospace);
   font-weight: bold;
+}
+
+.copy span img {
+  cursor: pointer;
+  margin-right: 1.25rem;
+  height: 1.25rem;
 }
 
 @media (width <= 43.75rem) {

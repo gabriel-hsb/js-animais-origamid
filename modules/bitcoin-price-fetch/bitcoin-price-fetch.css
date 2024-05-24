@@ -1,0 +1,6 @@
+[data-btc] {
+  border-bottom: 2px solid var(--success-color);
+  font-weight: bold;
+  font-family: var(--ff-monospace);
+  font-size: .9rem;
+}

@@ -30,3 +30,6 @@ dateHourWorking();
 
 import scrollToTop from "./modules/scroll-to-top/scroll-to-top.js";
 scrollToTop();
+
+import getBitcoinPrice from "./modules/bitcoin-price-fetch/bitcoin-price-fetch.js";
+getBitcoinPrice();

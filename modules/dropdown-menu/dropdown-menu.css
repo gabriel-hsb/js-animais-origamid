@@ -35,3 +35,10 @@
 .dropdown-menu li a:hover {
   color: #fff;
 }
+
+@media (width <= 700px) {
+  [data-dropdown] .dropdown-menu {
+    display: block !important;
+    animation: topToBottom 0.4s forwards;
+  }
+}

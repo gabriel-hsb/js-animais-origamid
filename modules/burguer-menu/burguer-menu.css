@@ -75,6 +75,6 @@
   .enabled-js .dropdown-menu {
     position: static;
     border: none;
-    width: 102.5%;
+    width: 100%;
   }
 }

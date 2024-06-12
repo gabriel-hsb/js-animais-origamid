@@ -13,8 +13,6 @@ export default async function getBitcoinPrice() {
       style: "currency",
       currency: "BRL",
     });
-
-    console.log(formatedBtc);
   } catch (err) {
     btcSpan.innerText = "R$ 349.420,69";
     console.error(err);

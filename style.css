@@ -9,6 +9,7 @@
 @import url(./modules/date-hour-working/date-hour-working.css);
 @import url(./modules/scroll-to-top/scroll-to-top.css);
 @import url(./modules/bitcoin-price-fetch/bitcoin-price-fetch.css);
+@import url(./modules/slide-photos/slide.css);
 
 :root {
   --ff-monospace: "IBM Plex Mono", monospace;
@@ -25,22 +26,13 @@
 
 /* --- START RESETS --- */
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p,
-dd,
-dt,
-dl,
-ul,
-li {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 img {

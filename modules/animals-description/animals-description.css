@@ -32,3 +32,35 @@
 .animal-photo-active {
   cursor: zoom-in;
 }
+
+/* animal photo modal  */
+
+.modal-photo-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-photo-container.active {
+  display: flex;
+}
+
+.modal-photo {
+  height: 90vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media (width <= 450px) {
+  .modal-photo {
+    height: auto;
+    max-width: 90vw;
+  }
+}

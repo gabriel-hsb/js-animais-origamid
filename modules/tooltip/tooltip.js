@@ -1,7 +1,6 @@
 export default function tooltip() {
   if (window.matchMedia("(width >= 500px)").matches) {
 
-    console.log(window.matchMedia("(width >= 500px)").matches)
     const tooltips = document.querySelectorAll("[data-tooltip]");
 
     tooltips.forEach((tooltip) => {

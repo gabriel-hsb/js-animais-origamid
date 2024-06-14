@@ -136,8 +136,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: -6px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  
 }
 
 .animals h2::before {
@@ -147,6 +150,14 @@ body {
   height: 0.625rem;
   margin-right: 0.625rem;
   background: var(--main-color);
+}
+
+.animals h2 button {
+  background: transparent;
+  border: none;
+  height: 1.6rem;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 .animals p {

@@ -38,3 +38,6 @@ import SlideNav from "./modules/slide-photos/slide.js";
 const slide = new SlideNav(".slide", ".slide-container");
 slide.init();
 slide.addControl(".custom-controls");
+
+import animalAudios from "./modules/animals-audio/animals-audios.js";
+animalAudios();
